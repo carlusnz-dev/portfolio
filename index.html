@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Pessoal</title>  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+  
+  <header class="header-cover">
+    <!--navbar offcanvas-->
+    <nav class="navbar navbar-expand-lg navbar-dark mb-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-code-square"></i>
+          Portfólio Pessoal
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Portfólio Pessoal</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#MainCover">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--cover-->
+    <div class="container" id="MainCover">
+      <div class="row">
+        <div class="col-12 col-lg-6" id="MainCover-col-1">
+          <h1 class="display-1">
+            Olá, eu sou <span class="display-1-span">Carlos</span>
+          </h1>
+          <p class="lead">
+            Desenvolvedor Web
+            <i class="bi bi-window" style="color: #ecc824;"></i>
+          </p>
+          <a href="#contact" class="btn btn-lg">Entre em contato</a>
+        </div>
+        <div class="col-12 col-lg-6" id="MainCover-col-2">
+          <img src="https://placehold.co/1000" alt="Cover" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12" id="about-title">
+            <div class="wrapper">
+              <div class="static-txt">Eu sou</div>
+              <ul class="dinamic-txt">
+                <li><span>programador</span></li>
+                <li><span>designer</span></li>
+                <li><span>locutor</span></li>        
+              </ul>
+            </div>
+          </div>
+        </div>         
+        <div class="row">
+          <div class="d-none d-lg-block col-lg-4">
+            <img src="https://placehold.co/280x350" alt="" class="img-fluid">
+          </div>
+          <div class="col-12 col-lg-8" id="aboutMeText">
+            <h1>Quem sou eu? <i class="bi bi-person-arms-up"></i></h1>
+            <hr>
+            <p class="lead">
+              Lorem ipsum dolor sit amet c onsectetur adipisicing elit.
+              Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <img src="https://placehold.co/992x400" alt="img" class="img-fluid d-block d-lg-none">
+          </div>
+        </div>
+        <div class="row mt-5" id="servicesAbout">
+          <h1>Trabalho com</h1>
+          <hr>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card-service">
+              <div class="card-service--body">
+                <h5 class="card-service--title">
+                  Desenvolvimento Web
+                </h5>
+                <div class="icon-service rounded p-3">
+                  <i class="bi bi-pc-display fs-3"></i>                    
+                </div>
+                <p class="card-service--text">
+                  Trabalho com desenvolvimento web full-stack.
+                </p>
+                <a href="#skills" class="btn">Ver mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card-service">
+              <div class="card-service--body">
+                <h5 class="card-service--title">
+                  Design Gráfico
+                </h5>
+                <div class="icon-service rounded p-3">
+                  <i class="bi bi-diagram-2 fs-3"></i>                    
+                </div>
+                <p class="card-service--text">
+                  Trabalho com design gráfico, criando logos, banners, cartões de visita, etc.
+                </p>
+                <a href="#skills" class="btn">Ver mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="card-service">
+              <div class="card-service--body">
+                <h5 class="card-service--title">
+                  Locução
+                </h5>
+                <div class="icon-service rounded p-3">
+                  <i class="bi bi-mic fs-3"></i>                    
+                </div>
+                <p class="card-service--text">
+                  No tempo livre, faço locução de rádio, com uma voz grave e aveludada.
+                </p>
+                <a href="#skills" class="btn">Ver mais</a>
+              </div>
+            </div>
+          </div>  
+        </div> 
+      </div>
+    </section>
+
+    <!--Habilidades-->
+    <section id="skills">
+      <div class="container">
+        <h1 class="display-5 text-center text-lg-start">Serviços</h1>
+        <hr>
+        <div class="row" id="skillWeb">
+          <div class="col-12 col-lg-4 d-none d-lg-block">
+            <div class="card-skill mb-3 mb-lg-0">
+              <div class="inner">
+                <img src="https://placehold.co/300x400" alt="img-card-skill" class="img-fluid card-skill--cover">
+              </div>
+              <img src="https://placehold.co/250" alt="img-card-skill" class="img-fluid card-skill--title rounded-pill shadow">
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <h1 class="title-skill">Desenvolvedor <span>Web</span></h1>
+            <p class="lead">
+              Trabalho com desenvolvimento web full-stack, utilizando as tecnologias mais atuais do mercado. Já desenvolvi site e aplicativo para rádio, sites estáticos de apresentação de empresas além de projetos pessoais. Também trabalho de freelancer, desenvolvendo sites e estruturando layouts.
+              <br>
+              Caso queira ver mais sobre meus projetos, acesse a aba <a href="#projects">Projetos</a>.
+            </p>
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <img src="https://placehold.co/400x200" alt="photo" class="img-photo">
+              </div>
+              <div class="col-lg-6 d-none d-lg-block">
+                <img src="https://placehold.co/400x200" alt="" class="img-photo">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5" id="skillDesign">
+          <div class="col-12 col-lg-8">
+            <h1 class="title-skill">Designer</h1>
+            <p class="lead">
+              Trabalho com design gráfico, criando logos, banners, cartões de visitas, etc, utilizando Adobe Photoshop e Ilustrator. Também crio layouts para sites e aplicativos, utilizando o Figma. Meu intuito é sempre criar algo que agrade o cliente e que seja funcional.
+              <br>
+              Atualmente estou estudando UI/UX Design, para aprimorar minhas habilidades e trabalhando para Deza Produções, criando banners e logos para redes sociais.
+              <br>
+              Um dos meus projetos pessoais é o site da <a href="https://www.dezaproducoes.com.br">Deza Produções</a>, site de agência publicitária.
+              <br>
+              Caso queira ver mais sobre meus projetos, acesse a aba <a href="#projects">Projetos</a>.
+              <br>
+              <div class="social-media">
+                <h5>Minhas redes sociais</h5>
+                <a href="https://www.instagram.com/dezaproducoes/" target="_blank" class="btn btn-social-media">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/dezaproducoes" target="_blank" class="btn btn-social-media">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </div>
+            </p>
+          </div>
+          <div class="col-12 col-lg-4 d-none d-lg-block">
+            <div class="card-skill">
+              <div class="inner">
+                <img src="https://placehold.co/300x400" alt="img-card-skill" class="img-fluid card-skill--cover">
+              </div>
+              <img src="https://placehold.co/250" alt="img-card-skill" class="img-fluid card-skill--title rounded-pill shadow">
+            </div>
+          </div>
+          <div class="row">
+            <h3 class="gallery--title">Algumas fotos</h3>
+            <div class="gallery d-none d-lg-flex">
+              <img src="https://placehold.co/1000" alt="photo-gallery">
+              <img src="https://placehold.co/1000" alt="photo-gallery">
+              <img src="https://placehold.co/1000" alt="photo-gallery">
+              <img src="https://placehold.co/1000" alt="photo-gallery">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="public/js/script.js"></script>
+</body>
+</html>
