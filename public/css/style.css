@@ -436,6 +436,17 @@ footer .social-media i:hover {
   color: #fff;
 }
 
+@media (max-width: 992px) {
+  footer .list-unstyled {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .list-unstyled li {
+    margin-inline: auto;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 992px) {
   body {
     background-size: cover;
